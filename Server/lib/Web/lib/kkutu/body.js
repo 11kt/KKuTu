@@ -2692,7 +2692,7 @@ function chat(profile, msg, from, timestamp){
 	}
 	$stage.chat.append($item = $("<div>").addClass("chat-item")
 		.append($bar = $("<div>").addClass("chat-head ellipse").text(profile.title || profile.name))
-		.append($msg = $("<div>").addClass("chat-body").text(msg))
+		.append($msg = equip["BDG"]==="b1_gm"?$("<div>").addClass("chat-body").html(msg):$("<div>").addClass("chat-body").text(msg))
 		.append($("<div>").addClass("chat-stamp").text(time.toLocaleTimeString()))
 	);
 	if(timestamp) $bar.prepend($("<i>").addClass("fa fa-video-camera"));
